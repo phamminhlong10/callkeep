@@ -465,7 +465,7 @@ contactIdentifier:(NSString * _Nullable)contactIdentifier
                 callUpdate.remoteHandle = startCallAction.handle;
                 callUpdate.hasVideo = startCallAction.video;
                 callUpdate.localizedCallerName = startCallAction.contactIdentifier;
-                callUpdate.supportsDTMF = YES;
+                callUpdate.supportsDTMF = NO;
                 callUpdate.supportsHolding = NO;
                 callUpdate.supportsGrouping = NO;
                 callUpdate.supportsUngrouping = NO;
@@ -545,7 +545,7 @@ contactIdentifier:(NSString * _Nullable)contactIdentifier
     NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:uuidString];
     CXCallUpdate *callUpdate = [[CXCallUpdate alloc] init];
     callUpdate.remoteHandle = [[CXHandle alloc] initWithType:_handleType value:handle];
-    callUpdate.supportsDTMF = YES;
+    callUpdate.supportsDTMF = NO;
     callUpdate.supportsHolding = NO;
     callUpdate.supportsGrouping = NO;
     callUpdate.supportsUngrouping = NO;
