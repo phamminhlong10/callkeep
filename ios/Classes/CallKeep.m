@@ -561,6 +561,10 @@ contactIdentifier:(NSString * _Nullable)contactIdentifier
             @"handle": handle,
             @"localizedCallerName": localizedCallerName ? localizedCallerName : @"",
             @"hasVideo": @(hasVideo),
+            @"supportsHolding": @"0",
+            @"supportsDTMF": @"0",
+            @"supportsGrouping": @"0",
+            @"supportsUngrouping": @"0",
             @"fromPushKit": @(fromPushKit),
             @"payload": payload ? payload : @"",
         }];
