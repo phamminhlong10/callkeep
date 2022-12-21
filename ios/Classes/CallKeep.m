@@ -627,7 +627,7 @@ contactIdentifier:(NSString * _Nullable)contactIdentifier
     }
     CXProviderConfiguration *providerConfiguration = [[CXProviderConfiguration alloc] initWithLocalizedName:appName];
     providerConfiguration.supportsVideo = YES;
-    providerConfiguration.maximumCallGroups = 3;
+    providerConfiguration.maximumCallGroups = 1;
     providerConfiguration.maximumCallsPerCallGroup = 1;
     if(settings[@"handleType"]){
         int _handleType = [CallKeep getHandleType:settings[@"handleType"]];
